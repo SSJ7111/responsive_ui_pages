@@ -1,38 +1,305 @@
-.App {
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-black";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-black.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-blackitalic";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-blackitalic.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-bold";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-bolditalic";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-bolditalic.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-extralight";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-extralight.otf")
+    format("opentype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-extralightitalic";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-extralightitalic.otf")
+    format("opentype");
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-italic";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-italic.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-light";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-light.otf") format("opentype");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-lightitalic";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-lightitalic.otf")
+    format("opentype");
+  font-weight: light;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-medium";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-medium.otf")
+    format("opentype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-mediumitalic";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-mediumitalic.otf")
+    format("opentype");
+  font-weight: medium;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-regular";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-thin";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-thin.otf") format("opentype");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-thinitalic";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-thinitalic.otf")
+    format("opentype");
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-ultra";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-ultra.otf") format("opentype");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fontspring-DEMO-altivo-ultraitalic";
+  src: url("./Assets/Fonts/Fontspring-DEMO-altivo-ultraitalic.otf")
+    format("opentype");
+  font-weight: light;
+  font-style: italic;
+}
+
+.nav-text {
+  font-family: "Fontspring-DEMO-altivo-regular";
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.nav-sub-text {
+  font-family: "Fontspring-DEMO-altivo-light";
+  color: #c6c6c6;
+  font-size: 12px;
+}
+
+.gradient_background {
+  background-image: url(./Assets/Images/Background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.banner-container{
+  height: 70vh;
+  width: 100vw;
+}
+
+.banner-text {
+  font-family: "Fontspring-DEMO-altivo-medium";
+  color: #c6c6c6;
+}
+
+.banner-sub-text {
+  font-family: "Fontspring-DEMO-altivo-extralight";
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.subscription-title {
+  font-family: "Fontspring-DEMO-altivo-medium";
+  color: #c6c6c6;
+  font-size: 26px;
+}
+
+.subscription-sub-title {
+  font-family: "Fontspring-DEMO-altivo-regular";
+  color: #c6c6c6;
+  font-size: 18px;
+}
+
+.subscription-text {
+  font-family: "Fontspring-DEMO-altivo-extralight";
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.subscription-sub-text {
+  font-family: "Fontspring-DEMO-altivo-thin";
+  color: #c6c6c6;
+  font-size: 14px;
+}
+
+.text-btn {
+  font-family: "Fontspring-DEMO-altivo-medium";
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.text-link {
+  font-family: "Fontspring-DEMO-altivo-regular";
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.spacing-md {
+  letter-spacing: 15px;
+}
+
+.navbar-bg {
+  background-color: #040000;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-gray {
+  background-color: #141414;
+}
+
+.card-img-custom {
+  width: 100%;
+  height: auto;
+  max-width: 70px;
+  max-height: 70px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.img-text {
+  font-family: "Fontspring-DEMO-altivo-regular";
+  color: #c0a991 !important;
+}
+
+.img-p {
+  font-family: "Fontspring-DEMO-altivo-light";
+  color: #545454 !important;
+  font-size: 14px;
+}
+
+.img-sub-p {
+  font-family: "Fontspring-DEMO-altivo-light";
+  color: #545454 !important;
+  font-size: 12px;
+}
+
+.mid-div {
+  background-color: #0c0c0c;
+}
+
+.subscription-container {
+  background-color: #141414;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.faq-title {
+  font-family: "Fontspring-DEMO-altivo-regular";
+  color: #c6c6c6;
+  font-size: 26px;
+}
+
+.faq-sub-title {
+  font-family: "Fontspring-DEMO-altivo-regular";
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+.faq-text {
+  font-family: "Fontspring-DEMO-altivo-thin";
+  color: #c6c6c6;
+  font-size: 16px;
+}
+
+/* ******************* accordion ui ********************** */
+
+.accordion-with-lines {
+  font-size: 16px;
+  color: #fff;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+}
+
+.number-container {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #0c0c0c;
+  border: 1px solid #c0a991;
+  color: #c0a991;
+  border-radius: 50%;
   text-align: center;
+  line-height: 25px;
+  font-weight: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.vertical-line {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 1px;
+  height: 40px;
+  background-color: #c0a991;
+  transform: translateX(-50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  flex: 1;
 }

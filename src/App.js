@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import Banner from "./Components/Banner";
+import Navbar from "./Components/Navbar";
+import FAQ from "./Components/FAQ";
+import MidSection from "./Components/MidSection";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-12 navbar-bg">
+          <Navbar />
+        </div>
+        <div className="col-md-12 gradient_background">
+          <Banner />
+        </div>
+        <div className="col-md-12 bg-gray">
+          <MidSection />
+        </div>
+        <div className="col-md-12 bg-black">
+          <FAQ />
+        </div>
+      </div>
     </div>
   );
 }
