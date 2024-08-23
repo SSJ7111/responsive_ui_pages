@@ -134,13 +134,15 @@
 
 .gradient_background {
   background-image: url(./Assets/Images/Background.png);
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
-.banner-container{
-  height: 70vh;
+.banner-container {
+  height: 100vh;
   width: 100vw;
 }
 
@@ -179,15 +181,20 @@
   font-size: 14px;
 }
 
+.card {
+  background-color: #0c0c0c !important;
+  height: 230px !important;
+}
+
 .text-btn {
-  font-family: "Fontspring-DEMO-altivo-medium";
-  color: #ffffff;
-  font-size: 16px;
+  font-family: "Fontspring-DEMO-altivo-regular" !important;
+  color: #c6c6c6 !important;
+  font-size: 16px !important;
 }
 
 .text-link {
   font-family: "Fontspring-DEMO-altivo-regular";
-  color: #ffffff;
+  color: #c6c6c6;
   font-size: 16px;
 }
 
@@ -195,9 +202,9 @@
   letter-spacing: 15px;
 }
 
-.navbar-bg {
+/* .navbar-bg {
   background-color: #040000;
-}
+} */
 
 .bg-black {
   background-color: #000000;
@@ -302,4 +309,44 @@
 
 .content {
   flex: 1;
+}
+
+/* *************** media query ***************** */
+
+#showFooter {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #showFooter {
+    display: block;
+  }
+
+  .btn-mobile {
+    font-family: "Fontspring-DEMO-altivo-regular" !important;
+    color: #c6c6c6 !important;
+    font-size: 16px !important;
+  }
+
+  .text-mobile {
+    font-family: "Fontspring-DEMO-altivo-thin";
+    color: #c6c6c6;
+    font-size: 14px;
+  }
+}
+
+.banner-text {
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+  .banner-text {
+    letter-spacing: 0.2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-text {
+    letter-spacing: 0.3em;
+  }
 }

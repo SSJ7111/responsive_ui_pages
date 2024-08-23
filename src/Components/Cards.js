@@ -5,7 +5,6 @@ import img3 from "../Assets/Images/MMRPerks.svg";
 import img4 from "../Assets/Images/100Flexible.svg";
 import img5 from "../Assets/Images/discountOnFoodAndBeverages.svg";
 import img6 from "../Assets/Images/convenienceFee.svg";
-import "./Cards.css";
 
 const Cards = () => {
   return (

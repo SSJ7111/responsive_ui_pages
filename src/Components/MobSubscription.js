@@ -1,29 +1,19 @@
 import React from "react";
 import star1 from "../Assets/Images/teenyicons_star-solid-1.svg";
-import star2 from "../Assets/Images/teenyicons_star-solid-2.svg";
 import star3 from "../Assets/Images/teenyicons_star-solid.svg";
 
-const Subscription = () => {
+const MobSubscription = () => {
   return (
     <div className="subscription-container bg-gray text-white p-4 rounded">
-      <div className="mb-3">
-        <img
-          src={star1}
-          alt="Subscription"
-          className="img-fluid"
-        />
-        <img
-          src={star2}
-          alt="Subscription"
-          className="img-fluid mb-4"
-        />
-        <img
-          src={star3}
-          alt="Subscription"
-          className="img-fluid"
-        />
-      </div>
-      <h4 className="subscription-title">Reel Deal Monthly Movies</h4>
+      <h5 className="subscription-title">
+        <span className="mx-1">
+          <img src={star1} alt="Subscription" className="img-fluid" />
+        </span>
+        Reel Deal Monthly Movies
+        <span className="mx-1">
+          <img src={star3} alt="Subscription" className="img-fluid" />
+        </span>
+      </h5>
       <p className="subscription-sub-text">
         Your flexible monthly membership to the latest movies
       </p>
@@ -53,21 +43,14 @@ const Subscription = () => {
             <span className="number">3</span>
           </div>
           <p className="content subscription-text">
-            Members earn 100 points and get a {`\u0024`} 5 reward redeemable on food {`\u0026`}
-             beverages {`\u002B`} many more benefits
+            Members earn 100 points and get a {`\u0024`} 5 reward redeemable on
+            food {`\u0026`}
+            beverages {`\u002B`} many more benefits
           </p>
         </div>
-      </div>
-      <div className="d-flex justify-content-between mt-4">
-        <button className="btn btn-danger text-btn">
-          Get started <span className="ml-2">→</span>
-        </button>
-        <a href="/" className="text-link">
-          Learn more
-        </a>
       </div>
     </div>
   );
 };
 
-export default Subscription;
+export default MobSubscription;

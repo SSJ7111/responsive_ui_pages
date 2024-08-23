@@ -5,6 +5,7 @@ import Banner from "./Components/Banner";
 import Navbar from "./Components/Navbar";
 import FAQ from "./Components/FAQ";
 import MidSection from "./Components/MidSection";
+import StickyFooter from "./Components/StickyFooter";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </div>
         <div className="col-md-12 bg-black">
           <FAQ />
+        </div>
+        <div className="col-md-12 bg-black" id="showFooter">
+          <StickyFooter/>
         </div>
       </div>
     </div>

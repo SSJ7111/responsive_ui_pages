@@ -2,7 +2,18 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar shadow-lg navbar-bg text-white navbar-expand-lg">
+    <nav
+      className="fixed-top navbar shadow-lg text-white navbar-expand-lg"
+      style={{
+        backgroundColor: "rgba(12, 12, 12, 0.5)",
+        backdropFilter: "blur(10px)",
+        WebkitBackdropFilter: "blur(10px)",
+        position: "absolute",
+        top: 0,
+        width: "100%",
+        zIndex: 1000,
+      }}
+    >
       <div className="container">
         <button
           className="navbar-toggler"
